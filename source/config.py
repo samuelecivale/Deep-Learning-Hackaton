@@ -8,7 +8,7 @@ class ModelConfig:
     test_path:  Optional[str] = None
     train_path: Optional[str] = None
     pretrain_paths: Optional[str] = None
-    batch_size: int = 64
+    batch_size: int = 24
     hidden_dim: int = 128
     latent_dim: int = 8
     num_classes: int = 6
