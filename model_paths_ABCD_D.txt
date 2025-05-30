@@ -1,0 +1,3 @@
+checkpoints_mx/model_D_cycle_4_epoch_0_loss_0.358_f1_0.798.pth
+checkpoints_mx/model_D_cycle_8_epoch_2_loss_0.348_f1_0.806.pth
+checkpoints_mx/model_D_cycle_10_epoch_0_loss_0.386_f1_0.787.pth

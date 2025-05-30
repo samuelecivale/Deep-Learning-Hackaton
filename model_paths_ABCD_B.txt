@@ -1,0 +1,3 @@
+checkpoints_mx/model_B_cycle_5_epoch_13_loss_1.284_f1_0.584.pth
+checkpoints_mx/model_B_cycle_9_epoch_14_loss_1.284_f1_0.605.pth
+checkpoints_mx/model_B_cycle_10_epoch_2_loss_1.275_f1_0.586.pth
