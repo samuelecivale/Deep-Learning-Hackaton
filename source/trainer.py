@@ -8,8 +8,6 @@ import pandas as pd
 import numpy as np
 import torch
 import os
-from tqdm import tqdm
-from tqdm import trange
 
 from torch_geometric.loader import DataLoader
 from sklearn.model_selection import train_test_split
@@ -26,7 +24,7 @@ def warm_up_lr(epoch, num_epoch_warm_up, init_lr, optimizer):
 
 
 class SymmetricCrossEntropyLoss(nn.Module):
-    def __init__(self, alpha=1.0, beta=1.0):
+    def __init__(self, alpha=1.3, beta=1.0):
         """
         Symmetric Cross Entropy = alpha * CE + beta * RCE
         CE: Cross Entropy
@@ -47,7 +45,7 @@ class SymmetricCrossEntropyLoss(nn.Module):
         rce_loss = -torch.sum(one_hot * torch.log(pred + 1e-7), dim=1).mean()
 
         return self.alpha * ce_loss + self.beta * rce_loss
-
+    
 
 class ModelTrainer:
     def __init__(self, config: 'ModelConfig', device: str):
@@ -217,6 +215,22 @@ class ModelTrainer:
             if epoch >= warmup_epochs:
                 scheduler.step(val_f1)
             
+
+            if (epoch + 1) % 4 == 0:
+                best_model_path = (f"checkpoints/model_{self.config.folder_name}_"
+                                f"cycle_{cycle_num}_epoch_{epoch}_"
+                                f"loss_{val_loss:.3f}_f1_{val_f1:.3f}.pth")
+                
+                torch.save({
+                    'model_state_dict': model.state_dict(),
+                    'optimizer_state_dict': optimizer.state_dict(),
+                    'epoch': epoch,
+                    'val_loss': val_loss,
+                    'val_f1': val_f1,
+                    'train_loss': train_loss,
+                    'config': self.config
+                }, best_model_path)
+
             # Save model if it has the best validation F1 so far
             if val_f1 > best_f1:
                 best_val_loss = val_loss

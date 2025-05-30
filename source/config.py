@@ -8,12 +8,12 @@ class ModelConfig:
     test_path:  Optional[str] = None
     train_path: Optional[str] = None
     pretrain_paths: Optional[str] = None
-    batch_size: int = 24
+    batch_size: int = 64
     hidden_dim: int = 128
     latent_dim: int = 8
     num_classes: int = 6
     epochs: int = 50
-    learning_rate: float = 0.000005
+    learning_rate: float = 0.00005
     num_cycles: int = 5
     warmup: int = 5
     early_stopping_patience: int = 20
