@@ -1,0 +1,127 @@
+2025-05-30 16:11:40,193 [INFO] Starting training using /kaggle/working/Deep-Learning-Hackaton/datasets/B/train.json.gz
+2025-05-30 16:13:04,647 [INFO] Loaded 3 pretrained models from /kaggle/working/Deep-Learning-Hackaton/model_paths_ABCD_B.txt
+2025-05-30 16:13:04,653 [INFO] 
+Starting cycle 1 with seed 1
+2025-05-30 16:13:22,568 [INFO] 
+Starting training cycle 1
+2025-05-30 16:13:22,792 [INFO] Loaded pretrained model: checkpoints_mx/model_B_cycle_5_epoch_13_loss_1.284_f1_0.584.pth
+2025-05-30 16:13:33,921 [INFO] New best model saved: checkpoints/model_B_cycle_1_epoch_0_loss_2.763_f1_0.590.pth
+2025-05-30 16:13:33,922 [INFO] Best validation metrics - Loss: 2.7633, F1: 0.5904
+2025-05-30 16:13:43,790 [INFO] New best model saved: checkpoints/model_B_cycle_1_epoch_1_loss_2.769_f1_0.597.pth
+2025-05-30 16:13:43,790 [INFO] Best validation metrics - Loss: 2.7689, F1: 0.5965
+2025-05-30 16:14:03,478 [INFO] Warm-up epochs finished
+2025-05-30 16:15:02,559 [INFO] Cycle 1, Epoch 10, LR 5.000e-05, Train Loss: 2.8721, Val Loss: 2.8300, Val Acc: 0.6018, Val F1=0.5882
+2025-05-30 16:16:41,656 [INFO] Cycle 1, Epoch 20, LR 3.500e-05, Train Loss: 2.8549, Val Loss: 2.8136, Val Acc: 0.6071, Val F1=0.5926
+2025-05-30 16:16:51,596 [INFO] Reloading best model: checkpoints/model_B_cycle_1_epoch_19_loss_2.814_f1_0.593.pth
+2025-05-30 16:17:11,429 [INFO] Early stopping triggered at epoch 22
+2025-05-30 16:17:11,431 [INFO] Cycle 1 completed:
+2025-05-30 16:17:11,432 [INFO] - Final validation loss: 2.7689
+2025-05-30 16:17:11,432 [INFO] - Final F1 score: 0.5965
+2025-05-30 16:17:11,434 [INFO] 
+Starting cycle 2 with seed 2
+2025-05-30 16:17:29,507 [INFO] 
+Starting training cycle 2
+2025-05-30 16:17:29,564 [INFO] Loaded pretrained model: checkpoints_mx/model_B_cycle_9_epoch_14_loss_1.284_f1_0.605.pth
+2025-05-30 16:17:39,936 [INFO] New best model saved: checkpoints/model_B_cycle_2_epoch_0_loss_2.851_f1_0.590.pth
+2025-05-30 16:17:39,937 [INFO] Best validation metrics - Loss: 2.8514, F1: 0.5903
+2025-05-30 16:18:10,892 [INFO] Warm-up epochs finished
+2025-05-30 16:19:12,658 [INFO] Cycle 2, Epoch 10, LR 5.000e-05, Train Loss: 2.9468, Val Loss: 2.8877, Val Acc: 0.5830, Val F1=0.5712
+2025-05-30 16:20:56,107 [INFO] Cycle 2, Epoch 20, LR 5.000e-05, Train Loss: 2.9309, Val Loss: 2.9293, Val Acc: 0.5884, Val F1=0.5785
+2025-05-30 16:21:06,461 [INFO] Reloading best model: checkpoints/model_B_cycle_2_epoch_19_loss_2.929_f1_0.578.pth
+2025-05-30 16:21:16,832 [INFO] Early stopping triggered at epoch 21
+2025-05-30 16:21:16,835 [INFO] Cycle 2 completed:
+2025-05-30 16:21:16,836 [INFO] - Final validation loss: 2.8514
+2025-05-30 16:21:16,837 [INFO] - Final F1 score: 0.5903
+2025-05-30 16:21:16,838 [INFO] 
+Starting cycle 3 with seed 3
+2025-05-30 16:21:34,829 [INFO] 
+Starting training cycle 3
+2025-05-30 16:21:34,850 [INFO] Loaded pretrained model: checkpoints_mx/model_B_cycle_10_epoch_2_loss_1.275_f1_0.586.pth
+2025-05-30 16:21:44,913 [INFO] New best model saved: checkpoints/model_B_cycle_3_epoch_0_loss_3.089_f1_0.520.pth
+2025-05-30 16:21:44,913 [INFO] Best validation metrics - Loss: 3.0890, F1: 0.5196
+2025-05-30 16:22:15,000 [INFO] Warm-up epochs finished
+2025-05-30 16:22:34,879 [INFO] New best model saved: checkpoints/model_B_cycle_3_epoch_5_loss_3.107_f1_0.528.pth
+2025-05-30 16:22:34,879 [INFO] Best validation metrics - Loss: 3.1068, F1: 0.5280
+2025-05-30 16:23:14,333 [INFO] Cycle 3, Epoch 10, LR 5.000e-05, Train Loss: 2.9966, Val Loss: 3.1317, Val Acc: 0.5348, Val F1=0.5108
+2025-05-30 16:24:53,245 [INFO] Cycle 3, Epoch 20, LR 3.500e-05, Train Loss: 2.9716, Val Loss: 3.1303, Val Acc: 0.5437, Val F1=0.5219
+2025-05-30 16:25:03,174 [INFO] Reloading best model: checkpoints/model_B_cycle_3_epoch_19_loss_3.130_f1_0.522.pth
+2025-05-30 16:25:52,528 [INFO] New best model saved: checkpoints/model_B_cycle_3_epoch_25_loss_3.120_f1_0.529.pth
+2025-05-30 16:25:52,529 [INFO] Best validation metrics - Loss: 3.1196, F1: 0.5290
+2025-05-30 16:26:31,829 [INFO] Cycle 3, Epoch 30, LR 3.500e-05, Train Loss: 2.9580, Val Loss: 3.1360, Val Acc: 0.5420, Val F1=0.5195
+2025-05-30 16:28:10,693 [INFO] Cycle 3, Epoch 40, LR 2.450e-05, Train Loss: 2.9373, Val Loss: 3.1260, Val Acc: 0.5491, Val F1=0.5285
+2025-05-30 16:28:20,596 [INFO] Reloading best model: checkpoints/model_B_cycle_3_epoch_39_loss_3.126_f1_0.529.pth
+2025-05-30 16:29:20,045 [INFO] Early stopping triggered at epoch 46
+2025-05-30 16:29:20,047 [INFO] Cycle 3 completed:
+2025-05-30 16:29:20,047 [INFO] - Final validation loss: 3.1196
+2025-05-30 16:29:20,048 [INFO] - Final F1 score: 0.5290
+2025-05-30 16:29:20,050 [INFO] 
+Starting cycle 4 with seed 4
+2025-05-30 16:29:37,543 [INFO] 
+Starting training cycle 4
+2025-05-30 16:29:37,600 [INFO] Loaded pretrained model: checkpoints_mx/model_B_cycle_5_epoch_13_loss_1.284_f1_0.584.pth
+2025-05-30 16:29:47,757 [INFO] New best model saved: checkpoints/model_B_cycle_4_epoch_0_loss_2.815_f1_0.576.pth
+2025-05-30 16:29:47,758 [INFO] Best validation metrics - Loss: 2.8147, F1: 0.5758
+2025-05-30 16:29:57,834 [INFO] New best model saved: checkpoints/model_B_cycle_4_epoch_1_loss_2.844_f1_0.576.pth
+2025-05-30 16:29:57,835 [INFO] Best validation metrics - Loss: 2.8444, F1: 0.5761
+2025-05-30 16:30:07,922 [INFO] New best model saved: checkpoints/model_B_cycle_4_epoch_2_loss_2.835_f1_0.576.pth
+2025-05-30 16:30:07,923 [INFO] Best validation metrics - Loss: 2.8354, F1: 0.5763
+2025-05-30 16:30:17,993 [INFO] Warm-up epochs finished
+2025-05-30 16:31:18,582 [INFO] Cycle 4, Epoch 10, LR 5.000e-05, Train Loss: 2.8530, Val Loss: 2.8579, Val Acc: 0.5848, Val F1=0.5665
+2025-05-30 16:33:00,634 [INFO] Cycle 4, Epoch 20, LR 3.500e-05, Train Loss: 2.8388, Val Loss: 2.8861, Val Acc: 0.5813, Val F1=0.5630
+2025-05-30 16:33:10,799 [INFO] Reloading best model: checkpoints/model_B_cycle_4_epoch_19_loss_2.886_f1_0.563.pth
+2025-05-30 16:33:41,346 [INFO] Early stopping triggered at epoch 23
+2025-05-30 16:33:41,348 [INFO] Cycle 4 completed:
+2025-05-30 16:33:41,349 [INFO] - Final validation loss: 2.8354
+2025-05-30 16:33:41,349 [INFO] - Final F1 score: 0.5763
+2025-05-30 16:33:41,351 [INFO] 
+Starting cycle 5 with seed 5
+2025-05-30 16:33:59,163 [INFO] 
+Starting training cycle 5
+2025-05-30 16:33:59,184 [INFO] Loaded pretrained model: checkpoints_mx/model_B_cycle_9_epoch_14_loss_1.284_f1_0.605.pth
+2025-05-30 16:34:09,205 [INFO] New best model saved: checkpoints/model_B_cycle_5_epoch_0_loss_2.903_f1_0.576.pth
+2025-05-30 16:34:09,206 [INFO] Best validation metrics - Loss: 2.9034, F1: 0.5761
+2025-05-30 16:34:39,012 [INFO] New best model saved: checkpoints/model_B_cycle_5_epoch_3_loss_2.888_f1_0.578.pth
+2025-05-30 16:34:39,013 [INFO] Best validation metrics - Loss: 2.8883, F1: 0.5780
+2025-05-30 16:34:39,014 [INFO] Warm-up epochs finished
+2025-05-30 16:35:38,704 [INFO] Cycle 5, Epoch 10, LR 5.000e-05, Train Loss: 2.9456, Val Loss: 2.9204, Val Acc: 0.5857, Val F1=0.5709
+2025-05-30 16:37:18,148 [INFO] Cycle 5, Epoch 20, LR 3.500e-05, Train Loss: 2.9070, Val Loss: 2.9245, Val Acc: 0.5929, Val F1=0.5793
+2025-05-30 16:37:18,166 [INFO] New best model saved: checkpoints/model_B_cycle_5_epoch_19_loss_2.925_f1_0.579.pth
+2025-05-30 16:37:18,166 [INFO] Best validation metrics - Loss: 2.9245, F1: 0.5793
+2025-05-30 16:38:56,796 [INFO] Cycle 5, Epoch 30, LR 3.500e-05, Train Loss: 2.9080, Val Loss: 2.9622, Val Acc: 0.5804, Val F1=0.5657
+2025-05-30 16:39:06,672 [INFO] Reloading best model: checkpoints/model_B_cycle_5_epoch_27_loss_2.944_f1_0.568.pth
+2025-05-30 16:40:35,685 [INFO] Cycle 5, Epoch 40, LR 2.450e-05, Train Loss: 2.8971, Val Loss: 2.9493, Val Acc: 0.5830, Val F1=0.5689
+2025-05-30 16:40:45,628 [INFO] Reloading best model: checkpoints/model_B_cycle_5_epoch_39_loss_2.949_f1_0.569.pth
+2025-05-30 16:40:45,629 [INFO] Early stopping triggered at epoch 40
+2025-05-30 16:40:45,630 [INFO] Cycle 5 completed:
+2025-05-30 16:40:45,631 [INFO] - Final validation loss: 2.9245
+2025-05-30 16:40:45,631 [INFO] - Final F1 score: 0.5793
+2025-05-30 16:40:45,632 [INFO] Saved paths of the best models to model_paths_B.txt
+2025-05-30 16:40:45,703 [INFO] Generating predictions for /kaggle/working/Deep-Learning-Hackaton/datasets/B/test.json.gz
+2025-05-30 16:41:18,038 [INFO] Model weights for ensemble:
+2025-05-30 16:41:18,039 [INFO] Model: model_B_cycle_1_epoch_19_loss_2.814_f1_0.593.pth
+2025-05-30 16:41:18,040 [INFO] - Loss: 0.5926
+2025-05-30 16:41:18,040 [INFO] - Weight: 0.2055
+2025-05-30 16:41:18,041 [INFO] Model: model_B_cycle_2_epoch_19_loss_2.929_f1_0.578.pth
+2025-05-30 16:41:18,041 [INFO] - Loss: 0.5785
+2025-05-30 16:41:18,042 [INFO] - Weight: 0.2026
+2025-05-30 16:41:18,043 [INFO] Model: model_B_cycle_3_epoch_43_loss_3.155_f1_0.517.pth
+2025-05-30 16:41:18,043 [INFO] - Loss: 0.5167
+2025-05-30 16:41:18,044 [INFO] - Weight: 0.1904
+2025-05-30 16:41:18,046 [INFO] Model: model_B_cycle_4_epoch_23_loss_2.915_f1_0.570.pth
+2025-05-30 16:41:18,046 [INFO] - Loss: 0.5701
+2025-05-30 16:41:18,046 [INFO] - Weight: 0.2009
+2025-05-30 16:41:18,047 [INFO] Model: model_B_cycle_5_epoch_39_loss_2.949_f1_0.569.pth
+2025-05-30 16:41:18,048 [INFO] - Loss: 0.5689
+2025-05-30 16:41:18,049 [INFO] - Weight: 0.2006
+2025-05-30 16:41:18,055 [INFO] 
+Ensemble prediction statistics:
+2025-05-30 16:41:18,056 [INFO] Class 0: 213 samples
+2025-05-30 16:41:18,056 [INFO] Class 1: 332 samples
+2025-05-30 16:41:18,057 [INFO] Class 2: 57 samples
+2025-05-30 16:41:18,057 [INFO] Class 3: 208 samples
+2025-05-30 16:41:18,058 [INFO] Class 4: 679 samples
+2025-05-30 16:41:18,059 [INFO] Class 5: 71 samples
+2025-05-30 16:41:18,059 [INFO] Average confidence: 0.9643
+2025-05-30 16:41:18,060 [INFO] Min confidence: 0.4032
+2025-05-30 16:41:18,061 [INFO] Max confidence: 1.0000
+2025-05-30 16:41:18,093 [INFO] Saved predictions to submission/testset_B.csv

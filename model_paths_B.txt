@@ -1,0 +1,5 @@
+checkpoints/model_B_cycle_1_epoch_19_loss_2.814_f1_0.593.pth
+checkpoints/model_B_cycle_2_epoch_19_loss_2.929_f1_0.578.pth
+checkpoints/model_B_cycle_3_epoch_43_loss_3.155_f1_0.517.pth
+checkpoints/model_B_cycle_4_epoch_23_loss_2.915_f1_0.570.pth
+checkpoints/model_B_cycle_5_epoch_39_loss_2.949_f1_0.569.pth
