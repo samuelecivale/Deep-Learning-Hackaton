@@ -19,7 +19,11 @@ Our approach is based on fine-tuning pretrained models created by Carlos Minutti
 - The predictions from the ensemble of models are combined using weighted voting, where the weights are the F1 scores of the models. This ensures that models with better performance contribute more to the final prediction.
 
 ---
+## Teaser
 
+![Teaser](ImageTeaser.png)
+
+---
 ## Procedure
 
 1. **Fine-Tuning on Individual Datasets:**
