@@ -38,6 +38,8 @@ def main():
         # Training mode
         logging.info(f"Starting training using {args.train_path}")
         df_train = load_dataset(args.train_path)
+        df_train['y'] = df_train['y'].apply(lambda x: x[0] if isinstance(x, list) else x)
+        df_train['y'] = df_train['y'].apply(lambda x: x[0] if isinstance(x, list) else x)
         trainer.train_multiple_cycles(df_train, args.num_cycles)
     else:
         # Prediction mode
