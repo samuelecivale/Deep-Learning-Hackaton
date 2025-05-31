@@ -18,9 +18,24 @@ def parse_args():
     parser.add_argument('--train_path', help='Path to train.json.gz file (optional)')
     parser.add_argument('--model_paths_file', help='Path to file containing list of model paths for prediction (optional)')
     parser.add_argument('--num_cycles', help='Number of cycles', default=5, type=int)
-    parser.add_argument('--pretrain_paths', help='Path to pretrained models')
-    
-    return parser.parse_args()
+    parser.add_argument('--pretrain_paths', help='Path to pretrained models (optional)')
+
+    args = parser.parse_args()
+
+    if args.train_path and not args.pretrain_paths:
+        # Training file must be something like  "../X/train.json.gz"
+        if args.train_path.endswith('/train.json.gz'):
+            dataset_letter = args.train_path.strip().split('/')[-2]
+            if dataset_letter in ['A', 'B', 'C', 'D']:
+                args.pretrain_paths = f'model_paths_ABCD_{dataset_letter}.txt'
+            else:
+                raise ValueError(f"Unexpected dataset identifier: '{dataset_letter}'. Expected one of A, B, C, D.")
+        else:
+            raise ValueError("train_path must end with '/train.json.gz'")
+
+    return args
+
+
 
 def main():
     args = parse_args()
