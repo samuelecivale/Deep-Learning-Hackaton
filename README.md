@@ -1,7 +1,8 @@
 # Deep Learning Exam Hackaton
 
 
-This repository contains the solution for the [Deep Learning Exam Hackathon Challenge](https://huggingface.co/spaces/examhackaton/GraphClassificationNoisyLabels).
+This repository contains the solution to the [Deep Learning Exam Hackathon Challenge](https://huggingface.co/spaces/examhackaton/GraphClassificationNoisyLabels).  
+The project was developed by the team **Catch Us If You Can**, consisting of [Samuele Civale](https://github.com/samuelecivale) (ID: 1938135) and [Luca Conti](https://github.com/iamlucaconti) (ID: 1702084).
 
 Our approach is based on fine-tuning pretrained models created by Carlos Minutti ([cminuttim](https://github.com/cminuttim/)), winner of the [IJCNN 2025 Competition: Learning with Noisy Graph Labels](https://sites.google.com/view/learning-with-noisy-graph-labe?usp=sharing). We apply the symmetric cross entropy loss function during fine-tuning to better handle the label noise.
 
@@ -16,7 +17,7 @@ Our approach is based on fine-tuning pretrained models created by Carlos Minutti
 ## Procedure
 
 1. **Fine-Tuning on Individual Datasets:**
-   - Top-performing models developed by [cminuttim](https://github.com/cminuttim/) were fine-tuned separately on each dataset (e.g., dataset A) to adapt to specific data characteristics.
+   - Top-performing models developed by [cminuttim](https://github.com/cminuttim/) were fine-tuned separately on each dataset (e.g., dataset A).
 
 2. **Prediction:**
    - An ensemble of fine-tuned models is used for generating predictions on the test set.
